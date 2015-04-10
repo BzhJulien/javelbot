@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+  response.send('Javel Dir à tout le monde');
 });
 
 app.post('/slack', function(request, response) {
@@ -128,6 +128,7 @@ app.post('/footix', function(request, response) {
 		text: 'Quand même sévère, non ?'
 	});
 	
+ }
 }
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
