@@ -53,6 +53,21 @@ app.post('/slack', function(request, response) {
 		text: 'https://www.youtube.com/watch?v=a1Y73sPHKxw'
 	});
 	
+	case 'salut':
+	response.json({
+		text: 'Je te fais des bisous tous doux'
+	});
+	
+	case 'hello':
+	response.json({
+		text: 'Quand quelqu\'un arrive et est poli, j\'ai le gode-ceinture tout dur'
+	});
+	
+	case 'coucou':
+	response.json({
+		text: 'COUROUCOUCOU ROUCOUCOU STACH STACH'
+	});
+	
 	
   }
 	
