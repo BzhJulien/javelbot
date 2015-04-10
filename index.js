@@ -16,16 +16,17 @@ app.post('/slack', function(request, response) {
 
   var triggerWord = request.body.trigger_word; // the word that triggered this hook;
 
-  if(triggerWord == "teub"){}
+  if(triggerWord == "teub"){
   
-  response.json({
-    text: 'Qui aime la teub ???'
-});
-}
+	response.json({
+		text: 'Qui aime la teub ???'
+	});
+  }
 
-else {response.json({
-    text: 'CAT CAT CAT'
-});}
+	else {response.json({
+		text: 'CAT CAT CAT'
+	});
+  }
 });
 
 
