@@ -19,14 +19,32 @@ app.post('/slack', function(request, response) {
   if(triggerWord == "teub"){
   
 	response.json({
-		text: 'Qui aime la teub ???'
+		text: 'ce n\'est pas un animal'
+	});
+  }
+  
+  if(triggerWord == "cat"){
+  
+	response.json({
+		text: 'miaou'
+	});
+  }
+  
+  if(triggerWord == "dog"){
+  
+	response.json({
+		text: 'wooouuf woouf'
+	});
+  }
+  
+    if(triggerWord == "bird"){
+  
+	response.json({
+		text: 'roucoule roucoule et chie sur les passants'
 	});
   }
 
-	else {response.json({
-		text: 'CAT CAT CAT'
-	});
-  }
+
 });
 
 
