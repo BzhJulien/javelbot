@@ -13,12 +13,23 @@ app.get('/', function(request, response) {
 app.post('/slack', function(request, response) {
 
   // var messageText = request.body.text; // the original message text
-  // var triggerWord = request.body.trigger_word; // the word that triggered this hook;
 
+  var triggerWord = request.body.trigger_word; // the word that triggered this hook;
+
+  if(triggerWord == "teub"){}
+  
   response.json({
-    text: 'Hello Slack!'
-  });
+    text: 'Qui aime la teub ???'
 });
+}
+
+else {response.json({
+    text: 'CAT CAT CAT'
+});}
+});
+
+
+
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
