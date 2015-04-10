@@ -104,8 +104,31 @@ app.post('/slack', function(request, response) {
 });
 
 
+app.post('/footix', function(request, response) {
+	
+	// var messageText = request.body.text; // the original message text
 
+  var triggerWord = request.body.trigger_word; // the word that triggered this hook;
+  
+  
+  switch(triggerWord.toLowerCase()){
 
+	case 'but':
+	response.json({
+		text: 'tout à fait Thierry'
+	});
+	
+	case 'hors-jeu':
+	response.json({
+		text: 'D\un bon metre'
+	});
+	
+	case 'penalty':
+	response.json({
+		text: 'Quand même sévère, non ?'
+	});
+	
+}
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'));
 });
