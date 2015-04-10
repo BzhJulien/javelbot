@@ -68,6 +68,11 @@ app.post('/slack', function(request, response) {
 		text: 'COUROUCOUCOU ROUCOUCOU STACH STACH'
 	});
 	
+	case 'hodor':
+	response.json({
+		text: 'hodor ?'
+	});
+	
 	
   }
 	
