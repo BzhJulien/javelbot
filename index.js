@@ -15,36 +15,39 @@ app.post('/slack', function(request, response) {
   // var messageText = request.body.text; // the original message text
 
   var triggerWord = request.body.trigger_word; // the word that triggered this hook;
-
-  if(triggerWord == "teub"){
   
+  switch(triggerWord)
+
+	case 'teub':
 	response.json({
 		text: 'ce n\'est pas un animal'
 	});
-  }
-  
-  if(triggerWord == "cat"){
-  
+	
+	case 'cat':
 	response.json({
 		text: 'miaou'
 	});
-  }
-  
-  if(triggerWord == "dog"){
-  
+	
+	case 'dog':
 	response.json({
-		text: 'wooouuf woouf'
+		text: 'woof woof'
 	});
-  }
-  
-    if(triggerWord == "bird"){
-  
+	
+	case 'squirrel':
 	response.json({
-		text: 'roucoule roucoule et chie sur les passants'
+		text: 'Sérieux, tu veux le cri d\'un écureuil ???'
 	});
-  }
 
+	case 'bird':
+	response.json({
+		text: 'piou piou'
+	});
 
+	case 'fish':
+	response.json({
+		text: 'bullul bullul'
+	});	
+	
 });
 
 
