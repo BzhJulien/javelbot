@@ -10,6 +10,9 @@ app.get('/', function(request, response) {
   response.send('Javel Dir à tout le monde');
 });
 
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
 app.post('/slack', function(request, response) {
 
   // var messageText = request.body.text; // the original message text
