@@ -48,6 +48,12 @@ app.post('/slack', function(request, response) {
 		text: 'bullul bullul'
 	});	
 	
+	case 'dramatic':
+	response.json({
+		text: 'https://www.youtube.com/watch?v=a1Y73sPHKxw'
+	});
+	
+	
   }
 	
 });
