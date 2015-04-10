@@ -73,6 +73,15 @@ app.post('/slack', function(request, response) {
 		text: 'hodor ?'
 	});
 	
+	case 'barça':
+	response.json({
+		text: 'Enfin, nous ne parlerons que des vraies équipes'
+	});
+	
+	case 'messi':
+	response.json({
+		text: 'Il m\'a piqué mon gode-ceinture'
+	});
 	
   }
 	
