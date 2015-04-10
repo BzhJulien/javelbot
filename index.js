@@ -17,7 +17,7 @@ app.post('/slack', function(request, response) {
   var triggerWord = request.body.trigger_word; // the word that triggered this hook;
   
   
-  switch(triggerWord.toLowerString()){
+  switch(triggerWord.toLowerCase()){
 
 	case 'teub':
 	response.json({
