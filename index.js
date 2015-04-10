@@ -83,6 +83,21 @@ app.post('/slack', function(request, response) {
 		text: 'Il m\'a piqué mon gode-ceinture'
 	});
 	
+	case 'merci':
+	response.json({
+		text: 'De rien'
+	});
+	
+	case 'cool':
+	response.json({
+		text: 'Raoul ?'
+	});
+	
+	case 'ciao':
+	response.json({
+		text: 'Arrivederci'
+	});
+	
   }
 	
 });
