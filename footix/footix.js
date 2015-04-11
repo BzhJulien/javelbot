@@ -12,5 +12,10 @@ module.exports = function(request, response) {
 	});
 
 	
+	case 'hodor':
+	response.json({
+		text: 'L\'avant centre ?'
+	});
+	
  }
 };
