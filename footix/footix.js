@@ -8,18 +8,9 @@ module.exports = function(request, response) {
 
 	case 'but':
 	response.json({
-		text: 'tout à fait Thierry'
+		text: 'Lucarne'
 	});
-	
-	case 'hors-jeu':
-	response.json({
-		text: 'D\'un bon metre'
-	});
-	
-	case 'penalty':
-	response.json({
-		text: 'Quand même sévère, non ?'
-	});
+
 	
  }
 };
