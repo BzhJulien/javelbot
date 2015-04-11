@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
   response.send('Javel Dir à tout le monde');
 });
 
-app.post('/slack', function(request, response) {
+/*app.post('/slack', function(request, response) {
 
   // var messageText = request.body.text; // the original message text
 
@@ -101,7 +101,7 @@ app.post('/slack', function(request, response) {
 	
   }
 	
-});
+});*/
 
 
 app.post('/footix', function(request, response) {
@@ -129,6 +129,4 @@ app.post('/footix', function(request, response) {
 	
  }
 });
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
-});
+app.listen(app.get('port'));
