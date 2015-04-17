@@ -4,7 +4,7 @@ module.exports = function(request, response) {
 
   var triggerWord = request.body.trigger_word; // the word that triggered this hook;
   var keyword = messageText.slice(triggerWord.length + 1);
-  
+  keyword.split(' ');
   var searchUrl = 'https://www.youtube.com/results?search_query='
   var searchText = searchUrl.concat(keyword)
   

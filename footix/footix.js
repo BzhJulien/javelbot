@@ -8,6 +8,7 @@ module.exports = function(request, response) {
 
 	case 'but':
 	response.json({
+<<<<<<< HEAD
 		text: 'Un but est marqué quand le ballon a entièrement franchi la ligne de but, entre les montants du but et sous la barre transversale, sous réserve qu\’aucune infraction aux Lois du Jeu n\’ait été préalablement commise par l\’équipe en faveur de laquelle un but aura été marqué. On peut aussi marquer contre son camp.'
 	});
 
@@ -31,5 +32,16 @@ module.exports = function(request, response) {
 	response.json({
 		text: 'Chaque match de football se dispute sous le contrôle d’un arbitre disposant de toute l\’autorité nécessaire pour veiller à l\’application des Lois du Jeu dans le cadre du match qu\’il est appelé à diriger.'
 	});
+=======
+		text: 'Lucarne'
+	});
+
+	
+	case 'hodor':
+	response.json({
+		text: 'L\'avant centre ?'
+	});
+	
+>>>>>>> 068797ad0565e11e51fe17737037a0629642e95a
  }
 };

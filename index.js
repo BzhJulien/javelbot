@@ -12,6 +12,9 @@ app.get('/', function(request, response) {
 
 app.post('/zanimaux', require('./zanimaux/zanimaux'));
 app.post('/footix', require('./footix/footix'));
+<<<<<<< HEAD
 app.post('/youtube', require('./youtube/youtube'));
+=======
+>>>>>>> 068797ad0565e11e51fe17737037a0629642e95a
 
 app.listen(app.get('port'));

@@ -87,6 +87,7 @@ module.exports =  function(request, response) {
 		text: 'Arrivederci'
 	});
 	
+<<<<<<< HEAD
 	case 'qui':
 	response.json({
 		text: 'Pas nous ! Autant on se prends des bitures mais là non !'
@@ -97,6 +98,8 @@ module.exports =  function(request, response) {
 		text: 'https://www.youtube.com/watch?v=BfasVrb28rE'
 	});
 	
+=======
+>>>>>>> 068797ad0565e11e51fe17737037a0629642e95a
   }
 	
 };
